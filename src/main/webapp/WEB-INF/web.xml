@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+
+	<display-name>Java web aplikacija za apoteku</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- autentifikacija -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>servleti.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>servleti.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegistracijaServlet</servlet-name>
+		<servlet-class>servleti.RegistracijaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistracijaServlet</servlet-name>
+		<url-pattern>/RegistracijaServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GreskaServlet</servlet-name>
+		<servlet-class>servleti.GreskaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GreskaServlet</servlet-name>
+		<url-pattern>/GreskaServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- administrator - korisnici -->
+	<servlet>
+		<servlet-name>KorisniciServlet</servlet-name>
+		<servlet-class>servleti.KorisniciServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>KorisniciServlet</servlet-name>
+		<url-pattern>/KorisniciServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DodajKorisnikaServlet</servlet-name>
+		<servlet-class>servleti.DodajKorisnikaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DodajKorisnikaServlet</servlet-name>
+		<url-pattern>/DodajKorisnikaServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IzmeniKorisnikaServlet</servlet-name>
+		<servlet-class>servleti.IzmeniKorisnikaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IzmeniKorisnikaServlet</servlet-name>
+		<url-pattern>/IzmeniKorisnikaServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ObrisiKorisnikaServlet</servlet-name>
+		<servlet-class>servleti.ObrisiKorisnikaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ObrisiKorisnikaServlet</servlet-name>
+		<url-pattern>/ObrisiKorisnikaServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- administrator - apoteke -->
+	<servlet>
+		<servlet-name>ApotekeServlet</servlet-name>
+		<servlet-class>servleti.ApotekeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApotekeServlet</servlet-name>
+		<url-pattern>/ApotekeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DodajApotekuServlet</servlet-name>
+		<servlet-class>servleti.DodajApotekuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DodajApotekuServlet</servlet-name>
+		<url-pattern>/DodajApotekuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IzmeniApotekuServlet</servlet-name>
+		<servlet-class>servleti.IzmeniApotekuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IzmeniApotekuServlet</servlet-name>
+		<url-pattern>/IzmeniApotekuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ObrisiApotekuServlet</servlet-name>
+		<servlet-class>servleti.ObrisiApotekuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ObrisiApotekuServlet</servlet-name>
+		<url-pattern>/ObrisiApotekuServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- menadzer - lekovi i izvestaj -->
+	<servlet>
+		<servlet-name>MojiLekoviServlet</servlet-name>
+		<servlet-class>servleti.MojiLekoviServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MojiLekoviServlet</servlet-name>
+		<url-pattern>/MojiLekoviServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DodajLekServlet</servlet-name>
+		<servlet-class>servleti.DodajLekServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DodajLekServlet</servlet-name>
+		<url-pattern>/DodajLekServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IzmeniLekServlet</servlet-name>
+		<servlet-class>servleti.IzmeniLekServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IzmeniLekServlet</servlet-name>
+		<url-pattern>/IzmeniLekServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ObrisiLekServlet</servlet-name>
+		<servlet-class>servleti.ObrisiLekServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ObrisiLekServlet</servlet-name>
+		<url-pattern>/ObrisiLekServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IzvestajServlet</servlet-name>
+		<servlet-class>servleti.IzvestajServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IzvestajServlet</servlet-name>
+		<url-pattern>/IzvestajServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- klijent / javni katalog -->
+	<servlet>
+		<servlet-name>LekoviServlet</servlet-name>
+		<servlet-class>servleti.LekoviServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LekoviServlet</servlet-name>
+		<url-pattern>/LekoviServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>KupiLekServlet</servlet-name>
+		<servlet-class>servleti.KupiLekServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>KupiLekServlet</servlet-name>
+		<url-pattern>/KupiLekServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MojeNarudzbineServlet</servlet-name>
+		<servlet-class>servleti.MojeNarudzbineServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MojeNarudzbineServlet</servlet-name>
+		<url-pattern>/MojeNarudzbineServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OtkaziNarudzbinuServlet</servlet-name>
+		<servlet-class>servleti.OtkaziNarudzbinuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OtkaziNarudzbinuServlet</servlet-name>
+		<url-pattern>/OtkaziNarudzbinuServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
