@@ -1,13 +1,12 @@
 # Java web aplikacija za apoteku
 
-Projekat iz predmeta **Internet programerski alati** - tema:
-"Projektovanje i razvoj Java Web aplikacije za apoteku"
+Web aplikacija za apoteke napravljena u Javi (Servlets, JSP, JDBC) sa MySQL bazom. Bez dodatnih frameworka: DbKonekcija singleton, DBQueries klase, sesije za prijavu i MD5 heširanje lozinki.
 
-Napravljeno koriscenjem istih tehnologija i istog stila koda kao na vezbama:
+Napravljeno koriscenjem sledecih tehnologija i stilova:
 Java Servlet, JSP (scriptlet pristup, bez JSTL/EL), JavaBean klase, JDBC
 (PreparedStatement) i MySQL baza podataka. Nema Spring Boot-a, Hibernate-a
-ni bilo kog dodatnog frameworka - sve je "rucno" napisano po uzoru na
-primere sa vezbi (DbKonekcija singleton, DBQueries klase sa statickim
+ni bilo kog dodatnog frameworka - sve je "rucno" napisano 
+(DbKonekcija singleton, DBQueries klase sa statickim
 metodama, sesija za logovanje, MD5 hesiranje lozinke kroz MySQL funkciju).
 
 ## Uloge u aplikaciji
@@ -91,7 +90,6 @@ lozinku za bazu, izmenite promenljive `url`, `user` i `password` u fajlu
 
 ## Napomena
 
-Ovo je osnovna verzija aplikacije koja pokriva funkcionalnosti navedene u
-uputstvu za projekat. Moze se dalje prosiriti (npr. korpa sa vise razlicitih
-lekova u jednoj narudzbini, filtriranje/pretraga lekova, paginacija,
-detaljnija validacija) u skladu sa tim sta se dalje bude radilo na casu.
+“Planovi za dalji razvoj”: 
+korpa sa više lekova u jednoj narudžbini, 
+pretraga i filtriranje, paginacija, detaljnija validacija.
