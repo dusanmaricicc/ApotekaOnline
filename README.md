@@ -92,4 +92,4 @@ lozinku za bazu, izmenite promenljive `url`, `user` i `password` u fajlu
 
 “Planovi za dalji razvoj”: 
 korpa sa više lekova u jednoj narudžbini, 
-pretraga i filtriranje, paginacija, detaljnija validacija.
+pretraga i filtriranje, paginacija, detaljnija validacija,prelazak sa MD5 na bcrypt.
